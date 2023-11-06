@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ex9.css">
+    <style>
+        @font-face {
+  font-family: 'DungGeunMootf';
+  font-style: normal;
+  src: url("DungGeunMo.otf") format('embedded-opentype');
+  
+  
+}
+    </style>
+</head>
+<body>
+    <div id="animation-container">
+        <div id="typing-container">
+          <span id="typing-text"></span>
+          <span id="cursor">|</span>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" charset="utf-8"></script>
+        
+        <div><img id="image" src="img/IMG_0361.PNG" alt="Image" /></div>
+    
+       
+    
+    <div class="square-container">
+        
+        <div class="square" data-popup-target="popup-1">
+            <img src="img/1144760.png" alt="">
+        </div>
+        <div class="square" data-popup-target="popup-2">
+            <img src="img/motionlogo.png" alt="">
+        </div>
+        <div class="square" data-popup-target="popup-3">
+            <img src="img/book-3.png" alt="">
+        </div>
+        <div class="square" data-popup-target="popup-4">
+          <img src="img/graphiclogo.png" alt="">
+        </div>
+        <div class="square" data-popup-target="popup-5">
+          <img src="img/weblogo.png" alt="">
+        </div>
+    </div>
+    
+    
+    <div class="popup" id="popup-1">
+      <div class="popup-content">
+        
+          <hr class="popup-line"> 
+          <div class="top-rectangle"></div>
+        
+          
+          <div class="top-rectangle3"></div>
+      
+          <div class="ppro"><h1>개인 프로필</h1></div>
+          <span span class="close-btn">X</span>
+        <button id="back-btn">←</button>
+        
+      </div>
+          <div class="scrollable-content">
+            <div class="popup-flex"> 
+              <img src="img/IMG_7440.JPG" alt="Description" class="popup-image">
+             
+              <div class="popup-text-content"> 
+                  <h2>철학이 있는 디자이너</h2>
+                  <hr class="somethingline"> 
+                  <p>디자인은 시각적 아름다움을 초월하여 인간의 경험과 사회적 영향을 고려해야 한다고 생각합니다. <br>
+                    디자인은 더 큰 이야기를 담고 있으며, 때로는 우리의 가치관과 철학을 반영합니다. 아름다운 <br>
+                    디자인은 물론 중요하지만, 그 아름다움에는 깊은 의미가 내포되어야 한다고 믿습니다. <br>
+                    이러한 믿음을 가지고 디자이너로서 작업하며, 미적 감각과 철학을 조화롭게 조합하여 <br>
+                    감동과 주는 작품을 창조하고자 합니다.</p>
+                  <button id="learn-more-btn">더 알아보기</button> 
+                  <div class="top-rectangle4"></div>
+                  
+                  
+              </div>
+              
+          </div>
+          <div class="more-content">
+            
+            <h1 class="aboutme"> <strong>About Me</strong> </h1>
+            <h1 class="aboutme2"> <strong>About Me</strong> </h1>
+            <div class="info-grid">
+              <div class="info-section">
+                <h2>PERSONAL INFOS</h2>
+                <hr class="side-line1"> 
+
+                <div class="info-row">
+                    <div class="info-column">
+                        <p>이름:  <strong>나재현</strong></p>
+                        <p>나이:  <strong>(만)24세</strong></p>
+                        <p>생년월일: <strong>1999. 10. 02</strong></p>
+                        <p>국적: <strong>대한민국</strong></p>
+                        <p>주소: <strong>서울특별시 구로구 경인로240 <br> 101동 1805호</strong></p>
+                    </div>
+                    <div class="info-column">
+                        <p>취미: <strong>대충 아무거나</strong></p>
+                        <p>MBTI: <strong>INTP</strong></p>
+                        <p>대충 뭐 쓸까?</p>
+                    </div>
+                </div>
+            </div>
+                <div class="info-more">
+                    <h2>학업</h2><br>
+                    <hr class="side-line2"> 
+                    <p>양천고등학교 2015. 03. 02 ~ 2018. 02. 10</p>
+                    <p>서울 폴리텍 대학교 강서 캠퍼스 2022. 03. 02 ~ 2024. 02.10</p><br>
+                    <h2>경험 및 수상 경력</h2>
+                    <hr class="side-line3"> 
+                    <p>형제옵틱스 2018. 09. 01 ~ 2020. 03. 15</p>
+                    <p>제 29회 디자인커뮤니케이션 공모전 입상</p><br>
+                    <h2>자격증</h2>
+                    <hr class="side-line3"> 
+                    <p>운전면허증 1종</p>
+                    <p>GTP 1급</p>
+                </div>
+            </div>
+            <div class="skills-section">
+                <h1>My Skills</h1>
+                
+    
+                    <div class="container">
+                        <div class="box">
+                          <div class="chart" data-percent="90" >90%</div>
+                          <h2>Photoshop</h2>
+                          <div class="chart" data-percent="85" >85%</div>
+                          <h2>After Effect</h2>
+                          
+                        </div>
+                        <div class="box">
+                     
+                          <div class="chart" data-percent="90" >90%</div>
+                          <h2>Illustrator</h2>
+                          <div class="chart" data-percent="80" >80%</div>
+                          <h2>Indesign</h2>
+                        </div>
+                        <div class="box">
+                            <div class="chart" data-percent="85" >85%</div>
+                            <h2>Premier Pro</h2>
+                            <div class="chart" data-percent="80" >80%</div>
+                            <h2>Html/css</h2>
+                        </div>
+                       
+                </div>
+            </div>
+        </div>
+        
+      </div>
+          </div>
+    </div>
+    
+    <div class="popup" id="popup-2">
+      <div class="popup-content">
+        <hr class="popup-line"> 
+        <div class="top-rectangle"></div>
+        <div class="top-rectangle3"></div>
+        
+        <div class="ppro2"><h1>Motion</h1></div>
+        <span class="close-btn">X</span>
+        <button class="back-btn2">←</button>
+        <!-- ... -->
+    
+        
+        
+      </div>
+      <div class="scrollable-content">
+        <div div class="popup-flex2">
+          <div class="popup-text-content1">
+              <button id="learn-more-btn1"><img src="img/think difi.png" alt=""></button>
+              <p class="btn-text">A Day With Apple</p>
+              <p class="btn-texted">01:26</p>
+          </div>
+          <div class="popup-text-content2">
+              <button id="learn-more-btn2"><img src="img/infinity.png" alt=""></button>
+              <p class="btn-text2">Infinite Loop</p>
+              <p class="btn-texted2">01:45</p>
+          </div>
+          <div class="popup-text-content3">
+              <button id="learn-more-btn3"><img src="img/dipration.png" alt=""></button>
+              <p class="btn-text3">Stagnation</p>
+              <p class="btn-texted3">01:18</p>
+          </div>
+          <div class="popup-text-content4">
+              <button id="learn-more-btn4"><img src="img/hazo.png" alt=""></button>
+              <p class="btn-text4">해초여행</p>
+              <p class="btn-texted4">00:17</p>
+          </div>
+          </div>
+      
+        <!-- ... -->
+      
+        <div class="morecon"></div>
+        <div class="more-content1" id="content1">
+            <video src="vid/a-day-with-appe.mp4" controls></video>
+            <p></p>
+            <div class="navigation">
+                <button id="prev-page"><img src="img/Screenshot 2023-11-05 at 21.17.52.png" alt=""></button>
+                <button id="next-page"><img src="img/222.png" alt=""></button>
+            </div>
+        </div>
+        <div class="extracontent" id="content15" style="display: none;">
+            <button id="prev-page-extra"><img src="img/Screenshot 2023-11-05 at 21.17.52.png" alt=""></button>
+            <button id="next-page-extra"><img src="img/222.png" alt=""></button>
+        </div>
+        
+        
+        <div class="more-content2" id="content2">
+            <video src="vid/univ.mp4" controls></video>
+            <p></p>
+            <div class="navigation">
+                <button id="prev-page2"><img src="img/Screenshot 2023-11-05 at 21.17.52.png" alt=""></button>
+                <button id="next-page2"><img src="img/222.png" alt=""></button>
+            </div>
+        </div>
+        <div class="extracontent2" id="content25" style="display: none;">
+            <button id="prev-page-extra2"><img src="img/Screenshot 2023-11-05 at 21.17.52.png" alt=""></button>
+            <button id="next-page-extra2"><img src="img/222.png" alt=""></button>
+        </div>
+          
+
+
+          <div class="more-content3" id="content3">
+            <video src="vid/dif.mp4" controls></video>
+            <p></p>
+            <div class="navigation">
+                <button id="prev-page3"><img src="img/Screenshot 2023-11-05 at 21.17.52.png" alt=""></button>
+                <button id="next-page3"><img src="img/222.png" alt=""></button>
+            </div>
+        </div>
+        <div class="extracontent3" id="content35" style="display: none;">
+            <button id="prev-page-extra3"><img src="img/Screenshot 2023-11-05 at 21.17.52.png" alt=""></button>
+            <button id="next-page-extra3"><img src="img/222.png" alt=""></button>
+        </div>
+
+          
+          <div class="more-content4" id="content4">
+            <button class="back-btn2">←</button>
+            <video src="vid/a-day-with-appe.mp4" controls></video>
+            <p></p>
+        </div>
+      </div>
+    </div>
+        </div>
+
+        
+    
+    
+    <div class="popup" id="popup-3">
+      <div class="popup-content">
+        <hr class="popup-line"> 
+        <div class="top-rectangle2"></div>
+        <div class="top-rectangle2"></div>
+        <div class="top-rectangle3"></div>
+        
+        <div class="ppro"><h1>Publicsh</h1></div>
+        <span class="close-btn">X</span>
+        <button class="back-btn3">←</button>
+        <!-- ... -->
+    
+    
+      </div>
+      <div class="scrollable-content">
+        <div class="popup-flex3">
+          <div class="popup-text-content5">
+              <button id="learn-more-btn5"><img src="img/chalea.png" alt=""></button>
+              <p class="btn-text10">차례</p>
+          </div>
+          <div class="popup-text-content6">
+              <button id="learn-more-btn6"><img src="img/insidetill.png" alt=""></button>
+              <p class="btn-text11">Inside Till Outside</p>
+          </div>
+          <div class="popup-text-content7">
+              <button id="learn-more-btn7"><img src="img/drugs.png" alt=""></button>
+              <p class="btn-text12">인터넷 중독</p>
+          </div>
+          <div class="popup-text-content8">
+              <button id="learn-more-btn8"><img src="img/ocean.png" alt=""></button>
+              <p class="btn-text13">해양안전</p>
+          </div>
+      </div>
+      
+      <!-- ... -->
+      
+          <div class="morecon2">
+            </div>
+           <div div class="more-content5" id="content5">
+            <button class="back-btn3">←</button>
+            <p>Content for Image 9o</p>
+          </div>
+          <div class="more-content6" id="content6">
+            <button class="back-btn3">←</button>
+            <p>Content for Image 2</p>
+          </div>
+          <div class="more-content7" id="content7">
+            <button class="back-btn3">←</button>
+            <p>Content for Image 3</p>
+          </div>
+          <div class="more-content8" id="content8">
+            <button class="back-btn3">←</button>
+            <p>Content for Image 4</p>
+        </div>
+          
+      </div>
+    </div>
+    </div>
+    
+    <div class="popup" id="popup-4">
+      <div class="popup-content">
+        <hr class="popup-line"> 
+        <div class="top-rectangle"></div>
+        <div class="top-rectangle2"></div>
+        <div class="top-rectangle3"></div>
+        
+        <div class="ppro"><h1>개인 프로필</h1></div>
+        <span class="close-btn">X</span>
+        <button class="back-btn4">←</button>
+        <!-- ... -->
+    
+    
+        
+      </div>
+      <div class="scrollable-content">
+        <div class="popup-flex4">
+          <div class="popup-text-content21">
+              <button id="learn-more-btn21"><img src="img/OWLOUTO.png" alt=""></button>
+              <p class="btn-text20">Your Text Here</p>
+          </div>
+          <div class="popup-text-content22">
+              <button id="learn-more-btn22"><img src="img/HEACHOT.png" alt=""></button>
+              <p class="btn-text21">Your Text Here</p>
+          </div>
+          <div class="popup-text-content23">
+              
+          </div>
+          <div class="popup-text-content24">
+              
+          </div>
+      </div>
+      
+      <!-- ... -->
+      
+          <div class="morecon3">
+            </div>
+           <div div class="more-content21" id="content21">
+            <button class="back-btn4">←</button>
+            <p>Content for Image 1</p>
+          </div>
+          <div class="more-content22" id="content22">
+            <button class="back-btn4">←</button>
+            <p>Content for Image 2</p>
+          </div>
+          <!--<div class="more-content23" id="content23">
+            <button class="back-btn4">←</button>
+            <p>Content for Image 3</p>
+          </div>
+          <div class="more-content24" id="content24">
+            <button class="back-btn4">←</button>
+            <p>Content for Image 4</p>
+        </div>-->
+      </div>
+    </div>
+    </div>
+    
+    
+    <div class="popup" id="popup-5">
+      <div class="popup-content">
+        <hr class="popup-line"> 
+        <div class="top-rectangle"></div>
+        <div class="top-rectangle2"></div>
+        <div class="top-rectangle3"></div>
+        
+        <div class="ppro"><h1>개인 프로필</h1></div>
+        <span class="close-btn">X</span>
+        <button class="back-btn5">←</button>
+        <!-- ... -->
+    
+    
+      </div>
+      <div class="scrollable-content">
+        <div class="popup-flex5">
+          <div class="popup-text-content31">
+              <button id="learn-more-btn31"><img src="img/ocll.png" alt=""></button>
+              <p class="btn-text30">Your Text Here</p>
+          </div>
+          <div class="popup-text-content32">
+              <button id="learn-more-btn32"><img src="img/geaoungi.png" alt=""></button>
+              <p class="btn-text31">Your Text Here</p>
+          </div>
+          <div class="popup-text-content33">
+              <button id="learn-more-btn33"><img src="img/bose.png" alt=""></button>
+              <p class="btn-text32">Your Text Here</p>
+          </div>
+          <div class="popup-text-content34">
+            <button id="learn-more-btn33"><img src="img/mangea.png" alt=""></button>
+              <p class="btn-text33">만개의 레시피</p>
+          </div>
+      </div>
+      
+      <!-- ... -->
+      
+          <div class="morecon4">
+            </div>
+           <div div class="more-content31" id="content31">
+            <button class="back-btn5">←</button>
+            <p>Content for Image 1</p>
+          </div>
+          <div class="more-content32" id="content32">
+            <button class="back-btn5">←</button>
+            <p>Content for Image 2</p>
+          </div>
+          <div class="more-content33" id="content33">
+            <button class="back-btn5">←</button>
+            <p>Content for Image 3</p>
+          </div>
+          <div class="more-content34" id="content34">
+            <button class="back-btn5">←</button>
+            <p>Content for Image 4</p>
+        </div>
+          
+      </div>
+    </div>
+    </div>
+    
+    
+      
+    
+      <script>
+        const text = "Welcome to My Portfolio";
+        const typingText = document.getElementById("typing-text");
+        const cursor = document.getElementById("cursor");
+        const image = document.getElementById("image");
+        let charIndex = 0;
+    
+        function typeText() {
+          typingText.textContent += text[charIndex];
+          charIndex++;
+          if (charIndex < text.length) {
+            setTimeout(typeText, 100);
+          } else {
+            // 모든 텍스트가 작성되면 애니메이션 시작
+            setTimeout(animateText, 1000); // 1초 후에 텍스트 애니메이션 시작
+          }
+        }
+    
+        function animateText() {
+          // 텍스트를 위로 올림
+          typingText.style.transform = "translateY(-100px)";
+    
+          // 커서를 숨김
+          cursor.style.opacity = 0;
+    
+          // 정사각형 애니메이션 시작
+          const squares = document.querySelectorAll(".square");
+          squares.forEach((square, index) => {
+            setTimeout(() => {
+              // 색상 변경
+              square.style.backgroundColor = "#fofofo";
+              // 왼쪽에서 오른쪽으로 나타남
+              square.style.transform = "scaleX(1)";
+              // 크기 변경
+              square.style.width = "100px";
+              square.style.height = "100px";
+            }, index * 100); // 0.1초 간격으로 실행
+          });
+    
+        
+    
+          
+    
+          // 이미지 애니메이션 시작
+          setTimeout(() => {
+            image.style.top = "-170px"; // 이미지를 100px 위로 이동
+          }, -100); // 5초 후에 이미지 애니메이션 시작
+    
+          
+        }
+    
+    
+    
+        typeText();
+      </script>
+    
+    <script>
+        
+    
+    // 팝업 열기 이벤트
+    const squares = document.querySelectorAll(".square");
+    squares.forEach(square => {
+        square.addEventListener("click", function() {
+            const popupId = this.getAttribute("data-popup-target");
+            const popup = document.getElementById(popupId);
+            if (popup) {
+                popup.style.display = "block";
+            }
+        });
+    });
+    
+    // 팝업 닫기 이벤트
+    const closeButtons = document.querySelectorAll(".close-btn");
+    closeButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const popup = this.closest(".popup");
+            if (popup) {
+                popup.style.display = "none";
+            }
+        });
+    });
+    
+    const learnMoreBtn = document.getElementById("learn-more-btn");
+    
+    learnMoreBtn.addEventListener("click", function() {
+        document.querySelector("#popup-1 .popup-flex").style.display = "none"; 
+        document.querySelector(".more-content").style.display = "block";
+        learnMoreBtn.style.display = "none"; // 더 알아보기 버튼을 숨김
+    });
+    
+    document.getElementById("back-btn").addEventListener("click", function() {
+        document.querySelector(".more-content").style.display = "none";
+        document.querySelector("#popup-1 .popup-flex").style.display = "flex"; 
+        learnMoreBtn.style.display = "block"; // 다시 더 알아보기 버튼을 보이게함
+    }
+    );
+    
+    //팝업2
+    
+    const btns1 = document.querySelectorAll("[id^='learn-more-btn1']");
+    const btns2 = document.querySelectorAll("[id^='learn-more-btn2']");
+    const btns3 = document.querySelectorAll("[id^='learn-more-btn3']");
+    const btns4 = document.querySelectorAll("[id^='learn-more-btn4']");
+    
+    const popupFlex2 = document.querySelector(".popup-flex2");
+    const contents1 = document.querySelectorAll(".more-content1");
+    const contents2 = document.querySelectorAll(".more-content2");
+    const contents3 = document.querySelectorAll(".more-content3");
+    const contents4 = document.querySelectorAll(".more-content4");
+    const backBtns = document.querySelectorAll(".back-btn2");
+    
+    // 모든 more-content를 숨깁니다.
+    const hideAllContents = () => {
+        [contents1, contents2, contents3, contents4].forEach(contents => {
+            contents.forEach(content => {
+                content.style.display = "none";
+            });
+        });
+    }
+    
+    btns1.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents();
+            popupFlex2.style.display = "none";
+            contents1[index].style.display = "block";
+        });
+    });
+    
+    btns2.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents();
+            popupFlex2.style.display = "none";
+            contents2[index].style.display = "block";
+        });
+    });
+    
+    btns3.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents();
+            popupFlex2.style.display = "none";
+            contents3[index].style.display = "block";
+        });
+    });
+    
+    btns4.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents();
+            popupFlex2.style.display = "none";
+            contents4[index].style.display = "block";
+        });
+    });
+    
+    backBtns.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents();
+            popupFlex2.style.display = "flex";
+        });
+    });
+    
+    
+    backBtns.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents();
+            popupFlex2.style.display = "flex";
+        });
+    });
+    
+    //팝업3
+    
+    const btns5 = document.querySelectorAll("[id^='learn-more-btn5']");
+    const btns6 = document.querySelectorAll("[id^='learn-more-btn6']");
+    const btns7 = document.querySelectorAll("[id^='learn-more-btn7']");
+    const btns8 = document.querySelectorAll("[id^='learn-more-btn8']");
+    
+    const popupFlex3 = document.querySelector(".popup-flex3");
+    const contents5 = document.querySelectorAll(".more-content5");
+    const contents6 = document.querySelectorAll(".more-content6");
+    const contents7 = document.querySelectorAll(".more-content7");
+    const contents8 = document.querySelectorAll(".more-content8");
+    const backBtns2 = document.querySelectorAll(".back-btn3");
+    
+    const hideAllContents2 = () => {
+        [contents5, contents6, contents7, contents8].forEach(contents => {
+            contents.forEach(content => {
+                content.style.display = "none";
+            });
+        });
+    }
+    
+    btns5.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents2();
+            popupFlex3.style.display = "none";
+            contents5[index].style.display = "block";
+        });
+    });
+    
+    btns6.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents2();
+            popupFlex3.style.display = "none";
+            contents6[index].style.display = "block";
+        });
+    });
+    
+    btns7.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents2();
+            popupFlex3.style.display = "none";
+            contents7[index].style.display = "block";
+        });
+    });
+    
+    btns8.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents2();
+            popupFlex3.style.display = "none";
+            contents8[index].style.display = "block";
+        });
+    });
+    
+    backBtns2.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents2();
+            popupFlex3.style.display = "flex";
+        });
+    });
+    
+    // 페이지 로딩 시 more-content를 모두 숨김
+     
+    
+    backBtns.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            if(contents5[index]) contents5[index].style.display = "none";
+            if(contents6[index]) contents6[index].style.display = "none";
+            if(contents7[index]) contents7[index].style.display = "none";
+            if(contents8[index]) contents8[index].style.display = "none";
+            popupFlex3.style.display = "flex";
+        });
+    });
+    
+    //팝업4
+    
+    const btns21 = document.querySelectorAll("[id^='learn-more-btn21']");
+    const btns22 = document.querySelectorAll("[id^='learn-more-btn22']");
+    const btns23 = document.querySelectorAll("[id^='learn-more-btn23']");
+    const btns24 = document.querySelectorAll("[id^='learn-more-btn24']");
+    
+    const popupFlex4 = document.querySelector(".popup-flex4");
+    const contents21 = document.querySelectorAll(".more-content21");
+    const contents22 = document.querySelectorAll(".more-content22");
+    const contents23 = document.querySelectorAll(".more-content23");
+    const contents24 = document.querySelectorAll(".more-content24");
+    const backBtns3 = document.querySelectorAll(".back-btn4");
+    
+    const hideAllContents3 = () => {
+        [contents21, contents22, contents23, contents24].forEach(contents => {
+            contents.forEach(content => {
+                content.style.display = "none";
+            });
+        });
+    }
+    
+    btns21.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents3();
+            popupFlex4.style.display = "none";
+            contents21[index].style.display = "block";
+        });
+    });
+    
+    btns22.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents3();
+            popupFlex4.style.display = "none";
+            contents22[index].style.display = "block";
+        });
+    });
+    
+    btns23.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents3();
+            popupFlex4.style.display = "none";
+            contents23[index].style.display = "block";
+        });
+    });
+    
+    btns24.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents3();
+            popupFlex4.style.display = "none";
+            contents24[index].style.display = "block";
+        });
+    });
+    
+    backBtns3.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents3();
+            popupFlex4.style.display = "flex";
+        });
+    });
+    
+    // 페이지 로딩 시 more-content를 모두 숨김
+     
+    
+    backBtns.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents();
+            popupFlex2.style.display = "flex";
+        });
+    });
+    
+    //팝업5
+    
+    const btns31 = document.querySelectorAll("[id^='learn-more-btn31']");
+    const btns32 = document.querySelectorAll("[id^='learn-more-btn32']");
+    const btns33 = document.querySelectorAll("[id^='learn-more-btn33']");
+    const btns34 = document.querySelectorAll("[id^='learn-more-btn34']");
+    
+    const popupFlex5 = document.querySelector(".popup-flex5");
+    const contents31 = document.querySelectorAll(".more-content31");
+    const contents32 = document.querySelectorAll(".more-content32");
+    const contents33 = document.querySelectorAll(".more-content33");
+    const contents34 = document.querySelectorAll(".more-content34");
+    const backBtns4 = document.querySelectorAll(".back-btn5");
+    
+    const hideAllContents4 = () => {
+        [contents31, contents32, contents33, contents34].forEach(contents => {
+            contents.forEach(content => {
+                content.style.display = "none";
+            });
+        });
+    }
+    
+    btns31.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents4();
+            popupFlex5.style.display = "none";
+            contents31[index].style.display = "block";
+        });
+    });
+    
+    btns32.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents4();
+            popupFlex5.style.display = "none";
+            contents32[index].style.display = "block";
+        });
+    });
+    
+    btns33.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents4();
+            popupFlex5.style.display = "none";
+            contents33[index].style.display = "block";
+        });
+    });
+    
+    btns34.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents4();
+            popupFlex5.style.display = "none";
+            contents34[index].style.display = "block";
+        });
+    });
+    
+    backBtns4.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents4();
+            popupFlex5.style.display = "flex";
+        });
+    });
+    
+    // 페이지 로딩 시 more-content를 모두 숨김
+     
+    
+    backBtns.forEach((btn, index) => {
+        btn.addEventListener("click", function() {
+            hideAllContents4();
+            popupFlex2.style.display = "flex";
+        });
+    });
+    
+    window.onload = function() {
+        // 팝업2 초기화
+        hideAllContents();
+        popupFlex2.style.display = "flex";
+    
+        // 팝업3 초기화
+        hideAllContents2();
+        popupFlex3.style.display = "flex";
+    
+        // 팝업4 초기화
+        hideAllContents3();
+        popupFlex4.style.display = "flex"; 
+    
+        // 팝업5 초기화
+        hideAllContents4();
+        popupFlex5.style.display = "flex"; 
+    }
+    
+    
+    
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+    var chartInitialized = false; // 차트가 초기화 되었는지 확인하는 변수
+    
+    // learn-more-btn 클릭 이벤트
+    $('#learn-more-btn').click(function() {
+        // more-content가 표시될 때 차트 애니메이션 활성화
+        if (!chartInitialized && $('.more-content').css('display') !== 'none') {
+            $('.chart').easyPieChart({
+                size: 160,
+                barColor: "#000",
+                scaleLength: 0,
+                lineWidth: 15,
+                trackColor: "#c1c1c1",
+                lineCap: "circle",
+                animate: 2000,
+            });
+            chartInitialized = true; // 차트가 초기화되었다는 것을 표시
+        }
+    });
+});
+
+/// 비디오 엘리먼트 가져오기
+const videoElement = document.querySelector("#content1 video");
+
+// back-btn2 클릭 시 (팝업으로 되돌아가기)
+document.querySelector(".back-btn2").addEventListener("click", function() {
+    videoElement.pause(); // 비디오 일시 정지
+});
+
+// extracontent로 넘어갈 때 (next-page-extra 버튼 클릭 시)
+document.getElementById("next-page").addEventListener("click", function() {
+    videoElement.pause(); // 비디오 일시 정지
+});
+
+
+
+
+
+// 초기 상태에서 content1 표시, content2 숨김
+document.getElementById("content1").style.display = "block";
+document.getElementById("content15").style.display = "none";
+
+// content1에서 next-page 버튼 클릭
+document.getElementById("next-page").addEventListener("click", function() {
+    document.getElementById("content1").style.display = "none";
+    document.getElementById("content15").style.display = "block";
+});
+
+// content2에서 prev-page-extra 버튼 클릭
+document.getElementById("prev-page-extra").addEventListener("click", function() {
+    document.getElementById("content15").style.display = "none";
+    document.getElementById("content1").style.display = "block";
+});
+
+//--
+
+// 초기 상태에서 content1 표시, content2 숨김
+document.getElementById("content2").style.display = "block";
+document.getElementById("content25").style.display = "none";
+
+// content1에서 next-page 버튼 클릭
+document.getElementById("next-page2").addEventListener("click", function() {
+    document.getElementById("content2").style.display = "none";
+    document.getElementById("content25").style.display = "block";
+});
+
+// content2에서 prev-page-extra 버튼 클릭
+document.getElementById("prev-page-extra2").addEventListener("click", function() {
+    document.getElementById("content25").style.display = "none";
+    document.getElementById("content2").style.display = "block";
+});
+
+//--
+
+// 초기 상태에서 content1 표시, content2 숨김
+document.getElementById("content3").style.display = "block";
+document.getElementById("content35").style.display = "none";
+
+// content1에서 next-page 버튼 클릭
+document.getElementById("next-page3").addEventListener("click", function() {
+    document.getElementById("content3").style.display = "none";
+    document.getElementById("content35").style.display = "block";
+});
+
+// content2에서 prev-page-extra 버튼 클릭
+document.getElementById("prev-page-extra3").addEventListener("click", function() {
+    document.getElementById("content35").style.display = "none";
+    document.getElementById("content3").style.display = "block";
+});
+
+ 
+
+  </script>
+</body>
+</html>
